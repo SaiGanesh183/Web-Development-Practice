@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav {
+            height: 50px;
+            width: 100%;
+            background-color: rgb(246, 176, 230);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid rgb(14, 14, 14);
+           border-radius: 5px;
+           margin-bottom: 20px;
+        }
+        .nav ul {
+            display: flex;
+            flex-direction: row;
+              list-style: none;
+
+        }
+        .nav ul li {
+            margin: 0 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(4, 4, 4);
+        }
+
+
+
+        .outer {
+            height: 375px;
+            width: 50%;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-evenly;
+            
+            padding: 20px;
+            border: 3px solid rgb(11, 130, 92);
+            border-radius: 12px;
+            flex-wrap: wrap;
+            
+        }
+        .outer div {
+            height: 100px;
+            width: 30%;
+            background-color: gray;
+            border: 3px solid rgb(51, 49, 49);
+            border-radius: 10px;  
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="nav">
+      <ul> 
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Blog</li>
+      </ul>
+    </div>
+    <div class="outer">
+        <div class="box1">A</div>
+        <div class="box2">B</div>
+        <div class="box3">C</div>
+        <div class="box4">D</div>
+        <div class="box5">E</div>
+        <div class="box6">F</div>
+        <div class="box4">G</div>
+        <div class="box5">H</div>
+        <div class="box6">I</div>
+    </div>
+</body>
+</html>
