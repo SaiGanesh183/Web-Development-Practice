@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            height: 100vh;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(12, 1fr);
+            row-gap: 10px;
+            column-gap: 10px;
+            
+        }
+        .header {
+            grid-column: 1/13;
+        }
+        .sidebar {
+            grid-column: 1/4;
+            grid-row: 2/12;
+        }
+        .nav {
+            grid-column: 4/13;
+            grid-row: 2/4;
+        }
+        .main {
+            grid-column: 4/10;
+            grid-row: 4/12;
+        }
+        .ads {
+            grid-column: 10/13;
+            grid-row: 4/12;
+        }
+        .foot {
+            grid-column: 1/13;
+            grid-row: 12/13;
+        }
+        
+        .container > div {
+           background-color: #da91b3;
+            padding: 10px;
+        }
+        @media (max-width: 720px){
+            .nav {
+                grid-column: 1/13;
+            }
+            .sidebar 
+                {
+                    grid-column: 1/4;
+                    grid-row: 4/12;
+                }
+                .main {
+                    
+                        grid-column: 4/13;
+                        grid-row: 4/12;
+                    
+                }
+                .ads{
+                    grid-column: 1/4;
+                    grid-row: 12/13;
+                    font-size: 15px;
+                }
+                .foot {
+                    grid-column: 4/13;
+                    grid-row: 12/13;
+                }
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="nav">Navigation</div>
+        <div class="main">Main Content</div>
+        <div class="ads">Advertisements</div>
+        <div class="foot">Footer</div>
+    </div>
+</body>
+</html>
